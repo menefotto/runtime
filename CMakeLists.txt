@@ -32,7 +32,7 @@ target_link_libraries(queue_bench pthread benchmark)
 
 #add runtime executable
 add_executable(runtime ../src/main.cpp)
-target_link_libraries(runtime pthread)
+target_link_libraries(runtime pthread fmt)
 
 #file(COPY ${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json
 #	DESTINATION ${CMAKE_CURRENT_SOURCE_DIR})

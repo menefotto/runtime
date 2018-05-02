@@ -6,23 +6,23 @@
 #include <iostream>
 #include <regex>
 #include <string>
+#include "fmt/printf.h"
 
-constexpr std::size_t core_count() {
-  std::size_t N = 4;
-  //  std::string input;
-  //  std::smatch match;
-  //  std::regex regx("processor");
-  //  std::ifstream cpuinfo("/proc/cpuinfo");
+std::size_t core_count() {
+  std::string line;
+  std::size_t count = 0;
+  std::ifstream info("/proc/cpuinfo");
 
-  // std::cout << cpuinfo.tellg() << "\n";
-  // cpuinfo.open("/proc/cpuinfo");
-  //  std::experimental::string_view sv(cpuinfo);
-  // if (std::regex_match(sv, match, regx)) {
-  //  N = match.size();
-  //}
-  // cpuinfo.close();
+  for(std::string line; std::getline(info, line);){
+    auto n = line.find("processor");
+    if(n != std::string::npos){
+      count++;
+    }
+  }
 
-  return N;
+  info.close();
+
+  return count;
 }
 
 #endif
