@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ub/Dropbox/cpp/runtime/build",
+  "command": "/usr/bin/clang++   -I/home/ub/Dropbox/cpp/runtime/include -I/usr/local/include  -std=c++1z -fPIC -g -Wall -pedantic   -std=gnu++1z -o CMakeFiles/queue_bench.dir/tests/queue_bench.cpp.o -c /home/ub/Dropbox/cpp/runtime/tests/queue_bench.cpp",
+  "file": "/home/ub/Dropbox/cpp/runtime/tests/queue_bench.cpp"
+},
+{
+  "directory": "/home/ub/Dropbox/cpp/runtime/build",
+  "command": "/usr/bin/clang++   -I/home/ub/Dropbox/cpp/runtime/include -I/usr/local/include  -std=c++1z -fPIC -g -Wall -pedantic   -std=gnu++1z -o CMakeFiles/runtime.dir/src/main.cpp.o -c /home/ub/Dropbox/cpp/runtime/src/main.cpp",
+  "file": "/home/ub/Dropbox/cpp/runtime/src/main.cpp"
+}
+]
